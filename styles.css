@@ -1,70 +1,73 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Shrikhand&display=swap");
 *,
 ::before,
 ::after {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 
 header {
-    font-family:'Shrikhand', cursive;
-    text-align: center;
-    box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
-    padding: 0.3rem;
-    margin: 0;
-    position: relative;
+  font-family: "Shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
+  padding: 0.3rem;
+  margin: 0;
+  position: relative;
 }
 
 main .local {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 1rem;
-    background-color: #f3f3f3;
-    text-align: center;
-    padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background-color: #f3f3f3;
+  text-align: center;
+  padding: 0 1rem;
 }
 
 main .local i {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
 }
 
 /* partie hero */
 .hero {
-   text-align: center;
-
+  text-align: center;
 }
 
 .hero h2 {
-    margin-top: 2rem;
-    font-size: 2rem;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .hero p {
-    font-size: 1rem;
-    margin-bottom: 2rem;
+  font-size: 1rem;
+  margin-bottom: 2rem;
 }
 
 .hero__btn {
-    color: #fff;
-    font-weight: 500;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border-radius: 2rem;
-    background-color: #646858;
-    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
-    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),
-    rgba(255,121,218,0.9));
-    transition: transform 200ms;
-    cursor: pointer;
+  color: #fff;
+  font-weight: 500;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  background-color: #646858;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  transition: transform 200ms;
+  cursor: pointer;
 }
 
 .hero__btn:hover {
-    transform: scale(1.02);
-    opacity: 0.9;
+  transform: scale(1.02);
+  opacity: 0.9;
 }
+
+div {
+  background-color: aqua;
+}
+
+/*# sourceMappingURL=styles.css.map */
