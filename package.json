@@ -1,0 +1,22 @@
+{
+  "name": "ohmyfood_marcelle_elenga_ouabonzi_15042022",
+  "version": "1.0.0",
+  "description": "Mon projet 3 OpenClassrooms",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EmmanuelleElg/Ohmyfood_marcelle_elenga_ouabonzi_15042022.git"
+  },
+  "author": "Emmanuelle Elg",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EmmanuelleElg/Ohmyfood_marcelle_elenga_ouabonzi_15042022/issues"
+  },
+  "homepage": "https://github.com/EmmanuelleElg/Ohmyfood_marcelle_elenga_ouabonzi_15042022#readme",
+  "devDependencies": {
+    "sass": "^1.50.0"
+  }
+}
