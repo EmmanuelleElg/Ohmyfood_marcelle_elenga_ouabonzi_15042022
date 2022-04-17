@@ -33,3 +33,38 @@ main .local {
 main .local i {
     font-size: 1.5rem;
 }
+
+/* partie hero */
+.hero {
+   text-align: center;
+
+}
+
+.hero h2 {
+    margin-top: 2rem;
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero__btn {
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    background-color: #646858;
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9),
+    rgba(255,121,218,0.9));
+    transition: transform 200ms;
+    cursor: pointer;
+}
+
+.hero__btn:hover {
+    transform: scale(1.02);
+    opacity: 0.9;
+}
