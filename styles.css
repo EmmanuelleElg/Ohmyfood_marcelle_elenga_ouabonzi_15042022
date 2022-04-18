@@ -10,6 +10,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.tuto {
+  padding: 0 1rem;
+}
+
 header {
   font-family: "Shrikhand", cursive;
   text-align: center;
@@ -19,7 +23,7 @@ header {
   position: relative;
 }
 
-main .local {
+.local {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,21 +32,17 @@ main .local {
   text-align: center;
   padding: 0 1rem;
 }
-
-main .local i {
+.local i {
   font-size: 1.5rem;
 }
 
-/* partie hero */
 .hero {
   text-align: center;
 }
-
 .hero h2 {
   margin-top: 2rem;
   font-size: 2rem;
 }
-
 .hero p {
   font-size: 1rem;
   margin-bottom: 2rem;
@@ -55,10 +55,11 @@ main .local i {
   padding: 1rem 2rem;
   border-radius: 2rem;
   background-color: #646858;
-  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);*/
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition: transform 200ms;
   cursor: pointer;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .hero__btn:hover {
@@ -66,8 +67,26 @@ main .local i {
   opacity: 0.9;
 }
 
-div {
-  background-color: aqua;
+.tuto ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+@media (max-width: 800px) {
+  .tuto ol {
+    flex-direction: column;
+  }
+}
+.tuto li {
+  background-color: #f6f6f6;
+  padding: 1rem 2rem;
+  flex-grow: 1;
+  border-radius: 1rem;
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+.tuto li:hover {
+  transform: scale(1.02);
 }
 
 /*# sourceMappingURL=styles.css.map */
