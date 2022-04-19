@@ -6,6 +6,7 @@
 
 .tuto {
     counter-reset: steps;
+    margin-top: 7rem;
     & ol {
        display: flex;
        flex-wrap: wrap; 
@@ -27,8 +28,9 @@
             place-items: center;
             border-radius: 50%;
             position: absolute;
-            bottom: variable.$base-height;
+            top: 50%;
             left: -1*variable.$base-height;
+            transform: translateY(-50%);
 
         }
         list-style-type: none;

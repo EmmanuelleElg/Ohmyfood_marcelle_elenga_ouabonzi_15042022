@@ -22,6 +22,10 @@ header {
   margin: 0;
   position: relative;
 }
+header .logomq {
+  text-decoration: none;
+  color: black;
+}
 
 .local {
   display: flex;
@@ -37,38 +41,46 @@ header {
 }
 
 .hero {
+  padding: 2rem;
+  background-color: rgb(250, 250, 250);
   text-align: center;
 }
 .hero h2 {
-  margin-top: 2rem;
+  margin: 0;
   font-size: 2rem;
 }
 .hero p {
   font-size: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 1rem;
 }
 
-.hero__btn {
+button {
+  margin-bottom: 2rem;
+  border: none;
   color: #fff;
   font-weight: 500;
   font-size: 1.5rem;
   padding: 1rem 2rem;
   border-radius: 2rem;
   background-color: #646858;
-  /*box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);*/
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   background-image: linear-gradient(to top, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   transition: transform 200ms;
   cursor: pointer;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
-
-.hero__btn:hover {
+button a {
+  text-decoration: none;
+  color: white;
+}
+button:hover {
   transform: scale(1.02);
   opacity: 0.9;
 }
 
 .tuto {
   counter-reset: steps;
+  margin-top: 7rem;
 }
 .tuto ol {
   display: flex;
@@ -101,8 +113,9 @@ header {
   place-items: center;
   border-radius: 50%;
   position: absolute;
-  bottom: 1rem;
+  top: 50%;
   left: -1rem;
+  transform: translateY(-50%);
 }
 .tuto li:hover {
   transform: scale(1.02);
@@ -111,6 +124,127 @@ header {
   margin-right: 1rem;
   color: #7e7e7e;
   font-size: 1.5rem;
+}
+
+.restaurants {
+  background-color: #f6f6f6;
+}
+.restaurants .container {
+  padding: 2rem 1rem;
+}
+.restaurants .container h2 {
+  /* margin-top: 2rem;*/
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+@media (min-width: 64rem) {
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+.cards .news {
+  position: relative;
+}
+.cards .news::before {
+  content: "Nouveau";
+  position: absolute;
+  display: grid;
+  place-items: center;
+  height: 2rem;
+  width: 5rem;
+  border-radius: 0.2rem;
+  background-color: #99E2D0;
+  color: #32b091;
+  right: 1rem;
+  top: 1rem;
+}
+
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+.card img {
+  height: 12rem;
+  width: 100%;
+  border: transparent solid 0px;
+  border-radius: 1rem 1rem 0 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+.card__footer {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.card__content {
+  flex: 1;
+}
+.card__title {
+  margin: 0;
+  margin-bottom: 0.25rem;
+}
+.card__subtitle {
+  margin: 0;
+}
+.card__btn {
+  height: 2rem;
+  width: 2rem;
+  background-color: transparent;
+  border: transparent 0px solid;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card__like {
+  background-color: white !important;
+}
+
+footer .container {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+footer h2 {
+  color: white;
+  font-family: "Shrikhand", "cursive";
+  font-weight: 500;
+  margin: 0;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+footer .footlogo {
+  text-decoration: none;
+}
+footer .footerlist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+footer .footlistElmt {
+  margin: 0.5rem 0;
+}
+footer .footlink {
+  color: white;
+  text-decoration: none;
+}
+footer .footlink:hover {
+  text-decoration: underline;
+}
+footer .footicon {
+  width: 1.2rem;
+  margin-right: 0.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,49 @@
+@use "../utils/color.scss";
+
+
+footer {
+    
+    .container {
+        background-color: color.$darkgrey;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+      }
+
+    h2 {
+        color: white;
+        font-family: "Shrikhand", "cursive";
+        font-weight: 500;
+        margin: 0;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        
+    }
+    .footlogo {
+        text-decoration: none;
+    }
+    .footerlist {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .footlistElmt {
+        margin: 0.5rem 0;
+    
+    }
+
+    .footlink {
+        color: white;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+    }
+
+    .footicon {
+        width: 1.2rem;
+    margin-right: 0.5rem;
+  }
+}
