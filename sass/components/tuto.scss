@@ -6,7 +6,8 @@
 
 .tuto {
     counter-reset: steps;
-    margin-top: 7rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     & ol {
        display: flex;
        flex-wrap: wrap; 

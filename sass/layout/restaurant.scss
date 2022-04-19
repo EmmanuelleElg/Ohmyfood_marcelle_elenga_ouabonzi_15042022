@@ -78,7 +78,7 @@
     margin: 0;
   }
 
-    &__btn {
+    /*&__btn {
     height: 2rem;
     width: 2rem;
     background-color: transparent;
@@ -91,6 +91,62 @@
 
     &__like {
     background-color: white!important;
+  }*/
+
+}
+
+/*
+.menubtn {
+ 
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9),
+    rgba(255,121,218,0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
   }
+  
+  &:hover .fas {
+    opacity: 1;
+    transform: translate(-110%) scale(1.1);
+
+  
+  }
+
+}*/
+
+.card__footer {
+  position: relative;
+  
+  i {
+    font-size: 2rem;
+    position:absolute;
+    right: 2rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9),
+    rgba(255,121,218,0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
+  }
+  
+  &:hover .fas {
+    opacity: 1;
+    transform: translate(5%) scale(1.1);
+
+  
+  }
+
+
 
 }

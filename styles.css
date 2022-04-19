@@ -80,7 +80,8 @@ button:hover {
 
 .tuto {
   counter-reset: steps;
-  margin-top: 7rem;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
 }
 .tuto ol {
   display: flex;
@@ -171,6 +172,20 @@ button:hover {
   text-decoration: none;
   color: inherit;
   display: block;
+  /*&__btn {
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+
+    &__like {
+    background-color: white!important;
+  }*/
 }
 .card img {
   height: 12rem;
@@ -196,18 +211,50 @@ button:hover {
 .card__subtitle {
   margin: 0;
 }
-.card__btn {
-  height: 2rem;
-  width: 2rem;
-  background-color: transparent;
-  border: transparent 0px solid;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+
+/*
+.menubtn {
+
+  .fas {
+    color: transparent;
+    background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9),
+    rgba(255,121,218,0.9));
+    background-clip: text;
+    -webkit-background-clip: text;
+    opacity: 0;
+    transition: all 200ms ease-in-out;
+
+  }
+
+  &:hover .fas {
+    opacity: 1;
+    transform: translate(-110%) scale(1.1);
+
+
+  }
+
+}*/
+.card__footer {
+  position: relative;
 }
-.card__like {
-  background-color: white !important;
+.card__footer i {
+  font-size: 2rem;
+  position: absolute;
+  right: 2rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.card__footer .fas {
+  color: transparent;
+  background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 200ms ease-in-out;
+}
+.card__footer:hover .fas {
+  opacity: 1;
+  transform: translate(5%) scale(1.1);
 }
 
 footer .container {
