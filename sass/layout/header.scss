@@ -1,3 +1,50 @@
+@use "../utils/color.scss";
+@use "../utils/animation.css";
+
+
+.loader-container {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.90);
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: loader 2500ms; 
+    animation-delay: 3s;
+    transition: opacity 1s ease-in-out;
+    animation-fill-mode: both;
+ 
+    
+}
+
+.dot {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 15px;
+    animation: loader infinite 0.3s alternate;
+    
+
+    &.d1 {
+        background-color: color.$purple;
+      }
+    
+      &.d2 {
+        background-color: color.$secondary;
+        animation-delay: 0.25s;
+      }
+    
+      &.d3 {
+        background-color: color.$tertiaire;
+        animation-delay: 0.5s;
+      }
+
+}
+
+
 header {
     font-family:'Shrikhand', cursive;
     text-align: center;
