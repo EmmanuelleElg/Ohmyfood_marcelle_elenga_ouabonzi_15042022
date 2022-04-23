@@ -204,9 +204,6 @@ button:hover {
   padding: 2rem 2rem 5rem;
   margin: auto;
 }
-.restaurants .container h2 {
-  /* margin-top: 2rem;*/
-}
 
 .cards {
   display: grid;
@@ -376,7 +373,7 @@ footer .footicon {
 
 .heroImg {
   max-width: 100%;
-  max-height: 40vh;
+  max-height: 30vh;
   width: 100%;
   object-fit: cover;
 }
@@ -387,6 +384,7 @@ footer .footicon {
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
+  padding: 0 1rem;
 }
 .menu__header {
   padding: 1rem 2rem 0 1rem;
