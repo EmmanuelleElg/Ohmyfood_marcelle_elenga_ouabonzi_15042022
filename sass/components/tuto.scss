@@ -8,6 +8,11 @@
     counter-reset: steps;
     margin-top: 4rem;
     margin-bottom: 4rem;
+    
+    .container {
+        padding: 0 2rem;
+    }
+
     & ol {
        display: flex;
        flex-wrap: wrap; 

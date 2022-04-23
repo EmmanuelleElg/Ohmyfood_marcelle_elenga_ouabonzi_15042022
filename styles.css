@@ -10,8 +10,8 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
-.tuto {
-  padding: 0 1rem;
+.main {
+  max-width: 1200px;
 }
 
 @-webkit-keyframes appear {
@@ -37,7 +37,8 @@ body {
 /*# sourceMappingURL=animation.css.map */
 .loader-container {
   position: fixed;
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: white;
+  /*rgba(255, 255, 255, 0.90);*/
   width: 100vw;
   height: 100vh;
   inset: 0;
@@ -45,8 +46,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  animation: loader 2500ms;
-  animation-delay: 3s;
+  animation: loader 500ms;
+  animation-delay: 2s;
   transition: opacity 1s ease-in-out;
   animation-fill-mode: both;
 }
@@ -90,10 +91,14 @@ header .logomq {
   gap: 1rem;
   background-color: #f3f3f3;
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 2rem;
 }
 .local i {
   font-size: 1.5rem;
+}
+.local h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
 }
 
 .hero {
@@ -104,6 +109,11 @@ header .logomq {
 .hero h2 {
   margin: 0;
   font-size: 2rem;
+}
+@media only screen and (min-width: 600px) {
+  .hero h2 br {
+    display: none;
+  }
 }
 .hero p {
   font-size: 1rem;
@@ -138,6 +148,9 @@ button:hover {
   counter-reset: steps;
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+.tuto .container {
+  padding: 0 2rem;
 }
 .tuto ol {
   display: flex;
@@ -188,7 +201,8 @@ button:hover {
   background-color: #f6f6f6;
 }
 .restaurants .container {
-  padding: 2rem 1rem;
+  padding: 2rem 2rem 5rem;
+  margin: auto;
 }
 .restaurants .container h2 {
   /* margin-top: 2rem;*/
@@ -255,17 +269,17 @@ button:hover {
   margin: 0;
 }
 
-.card__footer {
+.menulike {
   position: relative;
 }
-.card__footer i {
+.menulike i {
   font-size: 2rem;
   position: absolute;
-  right: 2rem;
+  right: 1rem;
   top: 50%;
   transform: translateY(-50%);
 }
-.card__footer .fas {
+.menulike .fas {
   color: transparent;
   background-image: linear-gradient(0deg, rgba(147, 86, 220, 0.9), rgba(255, 121, 218, 0.9));
   background-clip: text;
@@ -275,12 +289,11 @@ button:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: -10vh;
   transition-duration: 0.25s;
   background-color: #f6f6f6;
   position: absolute;
 }
-.card__footer:hover .fas {
+.menulike:hover .fas {
   opacity: 1;
   transform: translateY(-50%) scale(1.2);
 }
@@ -289,7 +302,7 @@ footer .container {
   background-color: #353535;
   display: flex;
   flex-direction: column;
-  padding: 1rem;
+  padding: 2rem 2rem;
 }
 footer h2 {
   color: white;
@@ -337,15 +350,12 @@ footer .footicon {
     transform: translateY(100%);
   }
 }
-.header--withBackArrow {
-  position: relative;
-}
 .header__arrow {
   position: absolute;
   left: 2rem;
   height: 2rem;
   width: 2rem;
-  top: 50%;
+  top: 65%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,16 +370,20 @@ footer .footicon {
   color: #9356DC;
 }
 
+.headeresto {
+  height: 75px;
+}
+
 .heroImg {
   max-width: 100%;
-  max-height: 32rem;
+  max-height: 40vh;
   width: 100%;
   object-fit: cover;
 }
 
 .menu {
   margin-top: -5rem;
-  border-radius: 2rem 2rem 0 0;
+  border-radius: 3rem 3rem 0 0;
   background-color: #f6f6f6;
   z-index: 1;
   position: relative;
@@ -450,6 +464,8 @@ footer .footicon {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
+  font-weight: 600;
+  line-height: 1.8rem;
 }
 .menuItem__description {
   margin: 0;
@@ -458,7 +474,7 @@ footer .footicon {
   overflow: hidden;
 }
 .menuItem__price {
-  font-weight: bold;
+  font-weight: 600;
   margin: 0;
   margin-left: auto;
   padding: 1rem;
@@ -504,7 +520,6 @@ footer .footicon {
 }
 
 .commandBtn {
-  /*@include button(primary);*/
   cursor: pointer;
 }
 

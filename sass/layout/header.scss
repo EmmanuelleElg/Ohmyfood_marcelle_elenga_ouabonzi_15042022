@@ -4,7 +4,7 @@
 
 .loader-container {
     position: fixed;
-    background-color: rgba(255, 255, 255, 0.90);
+    background-color: white; /*rgba(255, 255, 255, 0.90);*/
     width: 100vw;
     height: 100vh;
     inset: 0;
@@ -12,8 +12,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: loader 2500ms; 
-    animation-delay: 3s;
+    animation: loader 500ms; 
+    animation-delay: 2s;
     transition: opacity 1s ease-in-out;
     animation-fill-mode: both;
  
