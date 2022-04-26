@@ -4,6 +4,8 @@
 footer {
     
     .container {
+        max-width: 1400px;
+        margin: auto;
         background-color: color.$darkgrey;
         display: flex;
         flex-direction: column;

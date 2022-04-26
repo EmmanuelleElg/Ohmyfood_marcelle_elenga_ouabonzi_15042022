@@ -6,21 +6,16 @@
     &__arrow {
       position: absolute;
       left: 2rem;
-      height: 2rem;
-      width: 2rem;
-      top: 65%;
-      display:flex;
-      align-items:center;
-      justify-content:center;
+      top: 50%;
       transform: translateY(-50%);
       font-size: 1.2rem;
       color: black;
     
-      &:hover::before {
-        @include zoom.base-zoom;
+      &__arrow:hover::before {
+        color: color.$purple;
         transform: translateX(-50%);
         zoom: level 1.2;
-        color: color.$purple;
+        
     }
       
   }
@@ -28,6 +23,13 @@
 
 .headeresto {
   height: 75px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  & h1 {
+    margin:0;
+  }
 }
 
 .heroImg {
@@ -37,8 +39,9 @@
     object-fit: cover;
 }
 
-
 .menu {
+    max-width: 1400px;
+    margin: auto;
     margin-top: -5rem;
     border-radius: 3rem 3rem 0 0;
     background-color: #f6f6f6;
@@ -65,8 +68,8 @@
 
   .submenus {
     display: grid;
-  
-    @media (min-width:64rem) {
+    
+    @media (min-width:1319px) {
       grid-template-columns: repeat(3,1fr);
       column-gap: 1rem;
     }
