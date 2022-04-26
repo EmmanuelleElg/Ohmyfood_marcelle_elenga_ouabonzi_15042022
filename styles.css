@@ -362,10 +362,11 @@ footer .footicon {
   font-size: 1.2rem;
   color: black;
 }
-.header__arrow__arrow:hover::before {
+.header__arrow:hover {
+  transform: scale(1.02);
+  transform: translateY(-50%);
+  zoom: level 0.5;
   color: #9356DC;
-  transform: translateX(-50%);
-  zoom: level 1.2;
 }
 
 .headeresto {

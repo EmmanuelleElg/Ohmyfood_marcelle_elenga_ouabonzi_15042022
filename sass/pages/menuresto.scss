@@ -10,15 +10,16 @@
       transform: translateY(-50%);
       font-size: 1.2rem;
       color: black;
-    
-      &__arrow:hover::before {
+    }
+
+      &__arrow:hover {
+        @include zoom.base-zoom;
+        transform: translateY(-50%);
+        zoom: level 0.5;
         color: color.$purple;
-        transform: translateX(-50%);
-        zoom: level 1.2;
-        
     }
       
-  }
+ 
 }
 
 .headeresto {
